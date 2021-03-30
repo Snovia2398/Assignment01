@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlphabetsLearning">
-        <activity android:name=".Activity_Audio"></activity>
+        <activity android:name=".Activity_PlaySong"></activity>
+        <activity android:name=".PlaySong" />
+        <activity android:name=".Activity_Audio" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

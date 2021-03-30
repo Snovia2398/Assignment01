@@ -57,6 +57,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="#00796B"
         android:text="Alphabet Song"
+        android:onClick="playSong"
         android:textColor="#9CFFF3"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
