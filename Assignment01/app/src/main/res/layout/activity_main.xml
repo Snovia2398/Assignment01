@@ -71,6 +71,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="#FBC02D"
         android:text="Alphabets with images"
+        android:onClick="alphabets_words"
         android:textAllCaps="false"
         android:textColor="#F6E0AA"
         android:textStyle="bold"
