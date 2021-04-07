@@ -4,80 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#efe7e2"
-    tools:context=".MainActivity"
-    >
-
+    android:background="#ffc0b4"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Hey, WELCOME!"
-        android:textColor="#efe7e2"
-        android:textSize="35dp"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
         android:background="#FFE43872"
+        android:gravity="center_horizontal"
+        android:text="Hey, WELCOME!"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/main_image"
-        android:layout_width="406dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/imageView26"
+        android:layout_width="183dp"
+        android:layout_height="521dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text"
-        app:srcCompat="@drawable/alphabet" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/simg" />
 
     <Button
-        android:id="@+id/btn_audio"
-        android:layout_width="0dp"
+        android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#F10C0C"
-        android:text="Alphabets with sound"
-        android:textAlignment="center"
-        android:textColor="#EF9393"
-        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#FFA500"
+        android:fontFamily="sans-serif-condensed-medium"
         android:onClick="Audio"
+        android:text="Alphabets"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_sort_alphabetically"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
 
     <Button
-        android:id="@+id/btn_music"
-        android:layout_width="0dp"
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#00796B"
-        android:text="Alphabet Song"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_button"
         android:onClick="playSong"
-        android:textColor="#9CFFF3"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Song"
         android:textStyle="bold"
+        app:icon="@drawable/music"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_audio" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/btn_image"
-        android:layout_width="0dp"
+        android:id="@+id/button3"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FBC02D"
-        android:text="Alphabets with images"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_button"
         android:onClick="alphabets_words"
-        android:textAllCaps="false"
-        android:textColor="#F6E0AA"
+        android:text="Words"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textStyle="bold"
+        app:icon="@drawable/apple"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_music" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

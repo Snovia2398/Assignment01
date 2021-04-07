@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ffc0b4"
     android:layout_height="match_parent"
     tools:context=".Activity_o">
 
@@ -14,39 +15,52 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nn" />
+        app:srcCompat="@drawable/oo" />
 
     <Button
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        app:icon="@drawable/speaker"
         android:id="@+id/btnO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="130dp"
         android:onClick="play"
-        android:text="Play"
-        android:backgroundTint="#00796B"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/full_rounded_button"/>
+
     <Button
         android:id="@+id/btnBack_n"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
+        android:layout_marginStart="45dp"
         android:layout_marginBottom="32dp"
-        android:onClick="back"
+        android:background="@drawable/round_button"
         android:backgroundTint="#EF9393"
+        android:onClick="back"
         android:text="Back"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        app:icon="@drawable/left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/btnNext_p"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="65dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="32dp"
-        android:onClick="forward"
-        android:text="Forward"
+        android:background="@drawable/round_button"
         android:backgroundTint="#FBC02D"
+        android:onClick="forward"
+        android:text="Next"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        app:icon="@drawable/right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

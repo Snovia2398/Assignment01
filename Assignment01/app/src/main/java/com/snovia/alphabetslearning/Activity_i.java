@@ -25,12 +25,12 @@ public class Activity_i extends AppCompatActivity {
     }
 
     public void back(View view) {
-        Intent intent= new Intent(this,Activity_h.class);
+        Intent intent= new Intent(Activity_i.this,Activity_h.class);
         startActivity(intent);
     }
 
     public void forward(View view) {
-        Intent intent= new Intent(this,Activity_j.class);
+        Intent intent= new Intent(Activity_i.this,Activity_j.class);
         startActivity(intent);
     }
 }

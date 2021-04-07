@@ -21,13 +21,13 @@ public class Activity_Audio extends AppCompatActivity {
         GridView gridView= findViewById(R.id.gridView);
 
         final String[] letters = new String[] {
-                "A", "B", "C", "D", "E",
-                "F", "G", "H", "I", "J",
-                "K", "L", "M", "N", "O",
-                "P", "Q", "R", "S", "T",
-                "U", "V", "W", "X", "Y", "Z"};
+                "Aa", "Bb", "Cc", "Dd", "Ee",
+                "Ff", "Gg", "Hh", "Ii", "Jj",
+                "Kk", "Ll", "Mm", "Nn", "Oo",
+                "Pp", "Qq", "Rr", "Ss", "Tt",
+                "Uu", "Vv", "Ww", "Xx", "Yy", "Zz"};
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, letters);
+        ArrayAdapter adapter = new ArrayAdapter(this,R.layout.row, letters);
         gridView.setAdapter(adapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

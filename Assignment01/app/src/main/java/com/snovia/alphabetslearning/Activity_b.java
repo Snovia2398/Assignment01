@@ -26,12 +26,12 @@ public class Activity_b extends AppCompatActivity {
         mp.start();
     }
     public void forward(View view) {
-        Intent intent= new Intent(this,Activity_c.class);
+        Intent intent= new Intent(Activity_b.this,Activity_c.class);
         startActivity(intent);
     }
 
     public void back(View view) {
-        Intent intent= new Intent(this,Activity_a.class);
+        Intent intent= new Intent(Activity_b.this,Activity_a.class);
         startActivity(intent);
     }
 }
